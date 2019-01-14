@@ -1,24 +1,16 @@
 {
     "name": "szy-ali-topclient",
-    "version": "1.0.0",
-    "description": "taobao topsdk for node.js(support es6/7,promise,async/await)",
+    "version": "1.0.1",
+    "description": "ali topsdk for node.js(support es6/7,promise,async/await)",
     "main": "lib/topClient.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-        "prepublish": "npm run clean && npm run build",
-        "clean": "rimraf lib"
+        "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ztjy-fe/szy-ali-topclient.git"
     },
-    "keywords": [
-        "taobao",
-        "topsdk",
-        "topclient"
-    ],
-    "author": "Ray Guo",
+    "author": "ztjy",
     "license": "MIT",
     "devDependencies": {
         "babel-cli": "^6.18.0",
