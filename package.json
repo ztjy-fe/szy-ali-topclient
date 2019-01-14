@@ -1,0 +1,38 @@
+{
+    "name": "szy-ali-topclient",
+    "version": "1.0.0",
+    "description": "taobao topsdk for node.js(support es6/7,promise,async/await)",
+    "main": "lib/topClient.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+        "prepublish": "npm run clean && npm run build",
+        "clean": "rimraf lib"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ztjy-fe/szy-ali-topclient.git"
+    },
+    "keywords": [
+        "taobao",
+        "topsdk",
+        "topclient"
+    ],
+    "author": "Ray Guo",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-cli": "^6.18.0",
+        "babel-core": "^6.18.2",
+        "babel-eslint": "^7.1.0",
+        "babel-preset-es2015": "^6.18.0",
+        "babel-preset-stage-0": "^6.16.0",
+        "cross-env": "^3.1.3",
+        "eslint": "^3.10.2",
+        "eslint-config-airbnb-base": "^10.0.1",
+        "eslint-plugin-import": "^2.2.0",
+        "rimraf": "^2.5.4"
+    },
+    "dependencies": {
+        "request": "^2.78.0"
+    }
+}
