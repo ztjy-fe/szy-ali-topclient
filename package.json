@@ -1,6 +1,6 @@
 {
     "name": "szy-ali-topclient",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "ali topsdk for node.js(support es6/7,promise,async/await)",
     "main": "lib/topClient.js",
     "scripts": {
