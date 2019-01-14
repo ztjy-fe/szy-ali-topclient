@@ -15,17 +15,14 @@ import TopClient from 'szy-ali-topclient';
 const client = new TopClient({
   appkey: 'appkey',
   appsecret: 'appsecret',
+  REST_URL: 'https://eco.taobao.com/router/rest'
 });
 
 client.execute('alibaba.aliqin.fc.sms.num.send', {
-  extend: '123456',
-  sms_type: 'normal',
-  sms_free_sign_name: '阿里大于',
-  rec_num: '12345678912',
-  sms_template_code: 'SMS_8985285',
-  sms_param: {
-    customer: 'Ray'
-  }
+    'platform': '2',
+    'page_size': '20',
+    'page_no': '1',
+    'fields': 'click_url,coupon_click_url'
 })
 .then((result) => {
   console.log(result);
